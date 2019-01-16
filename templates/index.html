@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Population using drinking-water services (%)</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>飲用可能な水を利用できる人口割合(%)</h1>
+        <div>
+            <p>西暦
+                <select id=year>
+                    <option selected>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>2000</option>                    
+                </select>
+            </p>
+            <p>水準
+                <select id=level>
+                    <option value="Population using at least basic drinking-water services (%)" selected>最低限飲める水</option>
+                    <option value="Population using safely managed drinking-water services (%)">安全に管理された飲用水</option>
+                </select>
+            </p>
+            <p>地域
+                <select id=area>
+                    <option value="Total" selected>全体</option>
+                    <option value="Urban">都市</option>
+                    <option value="Rural">田舎</option>                    
+                </select>
+            </p>
+            <br>
+            <input type="button" id=plot value="適用"><span id=waittxt></span>
+            <p><font size="-1">※灰色になっている国はデータ無し</font></p>
+        </div>            
+        <img id=plotimg>     
+    </body>
+    <script type="text/javascript" src="/static/plot.js"></script>
+</html>
